@@ -1,0 +1,860 @@
+/*
+
+Макет собран на скорую руку Дмитрием Бороденко, и содержит
+не самый идеальный код!
+Полное или частичное его копирование опустошит вашу честь!
+
+**НЕ ЯВЛЯЕТСЯ ПОСОБИЕМ К ОБУЧЕНИЮ**
+
+*/
+
+
+$active: #fcac45; // Просто потому что я из ЛЛ.
+
+html, body, .container-fluid
+{
+	padding: 0px;
+	margin: 0px;
+	overflow-x: hidden;
+	font-family: Roboto, Helvetica, "Sans-Serif";
+}
+
+.container-fluid
+{
+	.top-nav
+	{
+		.menu { display: none; }
+
+		background: #000;
+		h1
+		{
+			font-size: 24px;
+			margin: 55px 0 0 180px;
+			color: white;
+			font-weight: 500;
+		}
+
+		&_links
+		{	
+			display: block;
+			margin: 55px 130px 0 0;
+			a 
+			{
+				font-size: 14px;
+				font-weight: 500;
+				margin: 0 16px 0 0;
+				padding-bottom: 13px;
+				text-transform: uppercase;
+				color: white;
+				text-decoration: none;
+				&:hover
+				{
+					border-bottom: 3px solid $active;
+				}
+			}			
+		}
+		&_welcome
+		{
+			padding: 150px 0 350px 0;
+			color: white;
+			text-align: center;
+			h2
+			{
+				color: grey;
+				font-size: 44px;
+				font-weight: 200;
+				margin-bottom: 0px;
+				span
+				{
+					color: $active;
+					font-weight: 500;
+				}
+			}
+
+			p
+			{
+				font-size: 18px;
+				color: grey;
+			}
+		}
+	}//..top-nav..
+
+	.about-us
+	{
+		&_left
+		{
+			padding: 0px;
+			img
+			{
+				margin: 100px 0 100px 180px;
+			}
+		}
+
+		&_right
+		{
+			padding: 0px;
+			margin: 100px 0 0 140px;
+			h2
+			{
+				margin: 30px 0 0 0;
+				display: inline-block;
+				font-size: 34px;
+				font-weight: 300;
+				padding-bottom: 20px;
+				border-bottom: 3px solid $active;
+				span
+				{
+					font-weight: 600;
+				}
+			}
+
+			p 
+			{
+				width: 415px;
+				font-size: 18px;
+				color: grey;
+				margin: 30px 0 45px 0;
+			}
+
+			ul
+			{
+				list-style: none;
+				margin: 0px;
+				padding: 0px;
+				li 
+				{
+					img
+					{
+						padding-right: 10px;
+						vertical-align: middle;
+					}
+					padding-bottom: 10px;
+					vertical-align: middle;
+					font-size: 18px;
+					font-weight: bold;
+					span
+					{
+						font-size: 16px;
+						font-weight: 500;
+						color: grey;
+					}
+				}
+			}
+		}
+	}
+
+	.our_team
+	{
+		text-align: center;
+		background: #000;
+		padding: 120px 0 120px 0;
+		.pic
+		{
+			width: 130px;
+			height: 130px;
+			border-radius: 50%;
+			background: grey;
+			margin: 20px auto;
+		}
+
+		h2
+		{
+			display: inline-block;
+			color: white;
+			font-weight: 300;
+			font-size: 44px;
+			text-transform: uppercase;
+			padding-bottom: 30px;
+			margin-bottom: 100px;
+			border-bottom: 3px solid $active;
+		}
+
+		h4
+		{
+			font-size: 20px;
+			color: grey;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		h5
+		{
+			font-size: 16px;
+			color: grey;
+			margin: 10px 0 10px 0;
+			padding: 0px;
+			text-transform: uppercase;
+		}
+
+		p
+		{
+			width: 250px;
+			margin: 0px;
+			padding: 0px;
+			font-size: 14px;
+			color: grey;
+		}
+	}
+
+
+	.our_services
+	{
+		padding: 50px 0 100px 0;
+		text-align: center;
+		h2
+		{
+			display: inline-block;
+			font-size: 44px;
+			padding-bottom: 20px;
+			border-bottom: 3px solid $active;
+			text-transform: uppercase;
+			font-weight: 300;
+		}
+		p 
+		{
+			display: block;
+			width: 1130px;
+			font-size: 16px;
+			color: grey;
+			margin: 0px auto;
+			padding: 35px 0 75px 0;
+		}
+
+		.object
+		{
+
+			h3
+			{
+				font-size: 25px;
+				margin: 0px;
+				padding: 20px 0 20px 0;
+				text-transform: uppercase;
+			}
+
+			p
+			{
+				padding: 0px;
+				margin: 0px auto;
+				font-size: 14px;
+				color: grey;
+				width: 245px;
+			}
+		}
+	}
+
+
+	.our_clients
+	{
+		padding: 75px 0 100px 0;
+		text-align: center;
+		background: #000;
+		h2
+		{
+			display: inline-block;
+			padding-bottom: 20px;
+			border-bottom: 3px solid $active;
+			font-size:44px;
+			font-weight: 200;
+			color: white;
+			text-transform: uppercase;
+			span
+			{
+				font-weight: 400;
+			}
+		}
+		.objects
+		{
+			margin: 20px;		
+		}
+	}
+
+	.our_work
+	{
+		.row
+		{
+			margin-bottom: 80px;
+		}
+		text-align: center;
+		h2
+		{
+			display: inline-block;
+			padding: 100px 0 50px 0;
+			font-size: 44px;
+			font-weight: 300;
+			padding-bottom: 20px;
+			border-bottom: 3px solid $active;
+			text-transform: uppercase;
+			span
+			{
+				font-weight: 500;
+			}
+		}
+
+		p 
+		{
+			font-size: 16px;
+			color: grey;
+			width: 1130px;
+			margin: 0px auto;
+			padding-bottom: 80px;
+		}
+
+		.gallery
+		{
+			display: flex;
+			padding-bottom: 10px;
+			&:last-child
+			{
+				margin-bottom: 20px;
+			}
+			img:hover
+			{
+				opacity: .8;
+				cursor: pointer;
+				transition: all 1s;
+			}
+		}
+	}
+
+
+	.testimonials
+	{
+		text-align: center;
+		padding: 100px 0 100px 0;
+		background: #000;
+		h2
+		{
+			display: inline-block;
+			color: white;
+			padding: 0px;
+			font-size: 44px;
+			font-weight: 200;
+			padding-bottom: 20px;
+			border-bottom: 3px solid $active;
+			text-transform: uppercase;
+			span
+			{
+				font-weight: 400;
+			}
+		}
+
+		p 
+		{
+			font-size: 16px;
+			width: 935px;
+			color: grey;
+		}
+
+		small
+		{
+			font-size: 14px;
+			color: grey;
+		}
+	}
+
+
+	.contacts
+	{
+		text-align: center;
+		margin: 80px 0 300px 0;
+		h2
+		{
+			display: inline-block;	
+			font-size: 44px;
+			font-weight: 300;
+			padding-bottom: 20px;
+			border-bottom: 3px solid $active;
+			text-transform: uppercase;
+		}
+
+		p 	
+		{
+			width: 710px;
+			color: grey;
+			font-size: 16px;
+			margin: 0 auto;
+		}
+		
+		form
+		{
+			color: grey;
+			text-align: left;
+			.block-1
+			{
+				margin-top: 50px;
+				display: flex;
+				input
+				{
+					width: 360px;
+					height: 30px;
+					font-size: 20px;
+				}
+				label:last-of-type
+				{
+					margin-left: 30px;
+				}
+			}
+
+			span
+				{
+					color: red;
+				}
+			.block-2
+			{
+				margin-top: 35px;
+				textarea
+				{
+					width: 750px;
+					height: 200px;
+				}
+			}
+			.btn
+				{
+					display: flex;
+					justify-content: flex-end;
+					margin-top: 15px;
+					.button
+					{
+						padding: 10px 40px 10px 40px;
+						border: none;
+						color: white;
+						font-size: 18px;
+						background: $active;
+						cursor: pointer;
+					}
+				}			
+		}
+	}
+
+	.footer
+	{
+		padding: 20px 0 20px 0;		
+		background: #000;
+	}
+}//..container..
+
+
+@media (min-width: 300px) and (max-width: 575px)
+{
+	html, body
+	{
+		overflow-x: hidden;
+		margin: 0px;
+		padding: 0px;
+	}
+	.container-fluid
+	{
+		padding: 0px;
+		margin: 0px;
+		.top-nav
+		{
+			position: relative;
+			h1 {margin: 20px; text-align: center;}
+			.menu
+				{
+					display: block;
+					position: absolute;
+					right: 35px;
+					top: 0px;
+					font-size: 18px;
+					text-transform: uppercase;
+					color: white;
+					text-decoration: none;
+				}
+			&_links
+			{
+				display: none;
+				margin: 20px;					
+				a 
+				{
+					display: block;
+					flex-direction: column;
+					&:hover
+					{
+						border-bottom: 0px;
+					}
+				}
+			}
+			&_links_active
+			{
+				display: block;
+			}
+
+			&_welcome
+			{
+				padding: 50px 0 100px 0;
+			}
+		}//..top-nav..
+
+		.about-us
+		{
+			margin: 50px;
+			padding: 0px;
+
+			&_left
+			{
+				margin: 0px;
+				padding: 0px;
+				img
+				{
+					margin: 0px;
+					padding: 0px;
+					max-width: 100%;
+				}
+			}
+
+			&_right
+			{
+				margin: 0px;
+				padding: 0px;
+				text-align: center;
+				h2
+				{
+					font-size: 18px;
+				}
+
+				p 
+				{
+					font-size: 13px;
+					margin: 30px 0 0 0;
+					padding: 0px;
+					max-width: 100%;
+				}
+
+				ul
+				{
+					margin: 30px 0 0 0;
+					padding: 0px;
+					li 
+					{
+						text-align: left;
+						margin: 0px;
+						padding: 0 0 10px 0;
+						font-size: 16px;
+						span
+						{
+							font-size: 14px;
+						}
+					}
+				}
+
+			}
+		}
+
+		.our_team
+		{
+			margin: 0px;
+			padding: 0px;
+			p 
+			{
+				margin: 0 auto;
+			}
+		}
+
+		.our_services
+		{
+			p
+			{
+				margin: 0 auto;
+				font-size: 14px;
+				max-width: 100%;
+			}
+
+			.row p
+			{
+				margin-bottom: 15px;
+			}
+		}
+
+		.our_clients
+		{
+			h2
+			{
+				font-size: 25px;
+			}
+		}
+
+		.our_work
+		{
+			h2
+			{
+				font-size: 20px;
+				padding-top: 30px;
+			}
+			.gallery
+			{
+				margin: 0px auto;
+				padding: 0px auto;
+				justify-content: center;
+			}
+			p
+			{
+				margin: 0 auto;
+				font-size: 14px;
+				max-width: 100%;
+			}
+			.line-1 div:not(:first-child)
+			{
+				display: none;
+			}
+			.line-2 div:not(:first-child)
+			{
+				display: none;
+			}
+			.line-3 div:not(:first-child)
+			{
+				display: none;
+			}
+		}
+
+		.testimonials
+		{
+			margin: 0px auto;
+			h2
+			{
+				max-width: 100%;
+				font-size: 20px;
+			}
+
+			.text
+			{
+				p 
+				{
+					width: 100%;
+					font-size: 16px;
+				}
+			}
+		}
+
+		.contacts
+		{
+			margin: 0px auto;
+			p 
+			{
+				width: 100%;
+				font-size: 16px;
+			}
+
+			.row form .block-1
+			{
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				label
+				{
+					padding-bottom: 30px;
+					text-transform: uppercase;
+				}
+				label:last-of-type
+				{
+					margin: 0px;
+				}
+				input
+				{
+					width: 80%;
+				}
+			}
+			 .row form .block-2
+			{
+				text-transform: uppercase;
+				text-align: center;
+				textarea
+				{
+					width: 80%;
+					margin: 0px;
+					padding: 0px;
+				}
+			}
+
+			.row form .btn
+			{
+				padding: 10px 0 20px 0;
+				justify-content: center;
+			}
+		}
+	}//..container..
+}
+
+@media (min-width: 575px) and (max-width: 1024px)
+{
+	.container-fluid
+	{
+		.top-nav
+		{
+			width: 100%;
+			position: relative;
+			h1 {margin: 20px;}
+			&_links
+			{
+				display: none;
+				margin: 20px 20px 20px 40px;
+				padding: 0px;
+			}
+
+			&_links_active
+			{
+				display: block;
+			}
+			.menu
+			{
+				position: absolute;
+				display: block;
+				top: 13px;
+				right: 20px;
+				font-size: 23px;
+				color: white;
+				text-decoration: none;
+			}
+
+			.welcome
+			{
+				padding: 50px 0 50px 0;
+			}
+		}
+
+		.about-us
+		{
+			.row
+			{
+				.about-us_left
+				{
+					display: flex;
+					width: 100%;
+					margin: 0px;
+					padding: 0px;
+					justify-content: center;
+
+					img
+					{
+						margin: 20px;
+						max-width: 100%;
+					}
+				}
+
+				.about-us_right
+				{
+					max-width: 100%;
+					margin: 0px;
+					padding-left: 30%;
+					h2
+					{
+						font-size: 35px;
+					}
+
+					p
+					{
+						font-size: 18px;
+						max-width: 100%;
+					}
+
+					ul li
+					{
+						font-size: 14px;
+					}
+				}
+			}
+		}
+
+		.our_services
+		{
+			p 
+			{
+				max-width: 100%;
+			}
+		}
+
+		.our_work
+		{
+			p 
+			{
+				max-width: 100%;
+			}
+
+			.line-1
+			{
+				.gallery
+				{
+					.col:last-child
+					{
+						display: none;
+					}
+				}
+			}
+
+			.line-2
+			{
+				.gallery
+				{
+					.col:last-child
+					{
+						display: none;
+					}
+				}
+			}
+
+			.line-3
+			{
+				.gallery
+				{
+					.col:last-child
+					{
+						display: none;
+					}
+				}
+			}
+		}
+	}//..container..
+}//..media..
+
+@media (min-width: 1024px) and (max-width: 1220px)
+{
+	.container-fluid
+	{
+		.row
+		{
+			.about-us_left
+			{
+				margin-left: 50px;
+				img
+				{
+					margin: 20px;
+				    max-width: 100%;
+				}
+				//margin: 0px;
+				max-width: 100%;
+			}
+			.about-us_right
+			{
+				margin: 0px 0 0 30px;
+				padding: 0px;
+			}
+		}
+		
+		.our_team
+		{
+			.row
+			{
+
+				max-width: 100%;
+
+			}
+		}
+
+
+		.our_services
+		{
+			p 
+			{
+				max-width: 100%;
+			}
+		}
+		.our_work
+		{
+			p
+			{
+				max-width: 100%;
+			}
+		}
+	}
+}
+
