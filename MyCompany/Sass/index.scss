@@ -858,3 +858,39 @@ html, body, .container-fluid
 	}
 }
 
+@media (min-width: 620px) and (max-width: 763px)
+{
+	.container-fluid
+	{
+		.about-us
+		{
+			.row
+			{
+				display: flex;
+				justify-content: center;
+				.about-us_left
+				{
+					display: flex;
+					justify-content: center;
+					img
+					{
+						max-width: 100%;
+					}
+				}
+
+				.about-us_right
+				{
+					
+					max-width: 100%;
+					h2
+					{
+						font-size: 35px;
+					}
+					margin: 0px;
+					padding: 0px;
+				}
+			}
+		}
+	}
+}
+
